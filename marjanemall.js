@@ -32,9 +32,3 @@ for(i=1; i<=702; i++){
     });
 }
 
-function saveToLocal(temp){
-    var items = JSON.parse(localStorage.getItem("items"))
-    items.concat(temp)
-    localStorage.setItem("items", JSON.stringify(items))
-}
-
