@@ -28,17 +28,17 @@ function getProductsByCategory(category){
 
                 // get current page number
                 var p = jQuery(page).find('.products.wrapper~.toolbar-products .item.pageNumber.current span:last-child').text()
-                console.log(`Page ${p}:${k} - ` +  jQuery(this).find('.product-item-link').text())
+                // console.log(`Page ${p}:${k} - ` +  jQuery(this).find('.product-item-link').text())
 
                 var onclick = jQuery(this).find(".product.product-item-photo").attr("onclick");
                 onclick = onclick.split(";")[1]
-                    // console.log(onclick)
+                // console.log(onclick)
                 onclick = onclick.replace(" window.dataLayer.push(", "")
                 onclick = onclick.slice(0, -1)
-                console.log(onclick)
-                    onclick = JSON.parse(onclick)
-                    // console.log('ecommerce', onclick.ecommerce)
-                    // json = JSON.parse(onclick)
+                onclick = JSON.parse(onclick)
+                // console.log(onclick)
+                // console.log('ecommerce', onclick.ecommerce)
+                // json = JSON.parse(onclick)
 
                 var item = {
                     page: p,
