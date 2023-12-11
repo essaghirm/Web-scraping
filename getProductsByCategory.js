@@ -1,5 +1,5 @@
 function getProductsByCategory(category) {
-    var products = JSON.parse(localStorage.getItem("items"))
+    var products = []
 
     console.log('category', category.id)
 
