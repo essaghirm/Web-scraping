@@ -11,7 +11,7 @@ function getProductsByCategory(category){
 
     var nbp = Math.floor(category.count/80) + 1
 
-    nbp = nbp > 4 ? 4 : nbp;
+    // nbp = nbp > 4 ? 4 : nbp;
 
     for(i=1; i<=nbp; i++){
         jQuery.ajax({
